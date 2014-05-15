@@ -32,12 +32,12 @@ public class Parser {
                 node.addChild(child);
                 node = child;
             } else {
-                for (int j = result[i].length()-1; j <= 0; j++) {
-                    if (result[i].charAt(i) == ')') {
+                node.addChild(child);
+                for (int j = (result[i].length()-1); j >= 0; j--) {
+                    if (result[i].charAt(j) == ')') {
                         node = node.getFather();
                     }
                 }
-                node.addChild(child);
             }
 
         }

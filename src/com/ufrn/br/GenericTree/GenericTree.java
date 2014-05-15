@@ -24,6 +24,7 @@ public class GenericTree {
     }
 
     public void preOrderTraversal(Node root){
+        System.out.println("FILHOS DE " + root.getValue() + ":" + root.getChildren().size());
         System.out.println(root.getValue());
         for (Node child : root.getChildren()) {
             preOrderTraversal(child);
