@@ -30,4 +30,14 @@ public class GenericTree {
         }
     }
 
+    public void prettyPrint(Node root, String s) {
+        s = s + " " + root.getValue();
+        if (root.getValue().charAt(root.getValue().length()-1) == ')') {
+            System.out.println(s);
+        }
+        for(Node child : root.getChildren()) {
+            prettyPrint(child, s);
+        }
+    }
+
 }
