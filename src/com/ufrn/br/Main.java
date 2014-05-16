@@ -16,9 +16,11 @@ public class Main {
 
         parser.parseTree(tree);
 
-//        tree.preOrderTraversal(tree.getRoot());
+        System.out.println("> PREORDER:");
+
+        tree.preOrderTraversal(tree.getRoot());
 //
-//        System.out.println("===========");
+        System.out.println("> PSEUDO PRETTY-PRINT:");
 
         tree.prettyPrint(tree.getRoot(), "");
 

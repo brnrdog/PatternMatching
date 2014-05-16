@@ -44,6 +44,10 @@ public class Node {
         this.printed = printed;
     }
 
+    public boolean hasChildren(){
+        return this.children.size() > 0;
+    }
+
     public List<Node> getChildren() {
         return children;
     }
