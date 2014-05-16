@@ -33,6 +33,7 @@ public class GenericTree {
 
     public void prettyPrint(Node root, String s) {
         s = s + " " + root.getValue();
+        root.setPrinted(true);
         if (root.getValue().charAt(root.getValue().length()-1) == ')') {
             System.out.println(s);
         }

@@ -20,7 +20,7 @@ public class Parser {
     }
 
     public void parseTree(GenericTree tree) throws IOException {
-        String[] result = fileContent.split(" ");
+        String[] result = fileContent.replace("\n", " ").split(" ");
 
         tree.setRoot(new Node(result[0]));
 

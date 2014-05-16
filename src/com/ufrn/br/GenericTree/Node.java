@@ -11,11 +11,13 @@ public class Node {
     private String value;
     private Node father;
     private List<Node> children;
+    private boolean printed;
 
     public Node(String value) {
         this.value = value;
         this.children = new ArrayList<Node>();
         this.father = null;
+        this.printed = false;
     }
 
     public String getValue() {
@@ -32,6 +34,14 @@ public class Node {
 
     public void setFather(Node father) {
         this.father = father;
+    }
+
+    public boolean isPrinted() {
+        return printed;
+    }
+
+    public void setPrinted(boolean printed) {
+        this.printed = printed;
     }
 
     public List<Node> getChildren() {
