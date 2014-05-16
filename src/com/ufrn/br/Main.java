@@ -11,7 +11,6 @@ public class Main {
 
         GenericTree tree = new GenericTree(null);
 
-
         Parser parser = new Parser("PTB-flat.txt");
 
         parser.parseTree(tree);
@@ -23,6 +22,7 @@ public class Main {
         System.out.println("> PSEUDO PRETTY-PRINT:");
 
         tree.prettyPrint(tree.getRoot(), "");
+
 
 
 
